@@ -9,6 +9,7 @@ Estilos con CSS
 Organización de archivos en un proyecto web
 🧩 Estructura del proyecto
 
+
 📁 Pagina_Adopta-y-Ama/
 │
 ├── index.html
@@ -21,9 +22,10 @@ Organización de archivos en un proyecto web
 🚀 Tecnologías utilizadas
 HTML5
 CSS3
+
 🌐 Visualización
 El proyecto está publicado en GitHub Pages:
-👉 https://melissazarate.github.io/Pagina_Adopta-y-Ama/⁠�
+👉 https://melissazarate.github.io/Pagina_Adopta-y-Ama/⁠
 📚 Notas
 Este proyecto no incluye JavaScript ni funcionalidades dinámicas, ya que su propósito es reforzar conceptos básicos de maquetación web.
 ✍️ Autor
