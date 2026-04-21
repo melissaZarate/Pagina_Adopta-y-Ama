@@ -25,7 +25,7 @@ CSS3
 
 🌐 Visualización
 El proyecto está publicado en GitHub Pages:
-👉 https://melissazarate.github.io/Pagina_Adopta-y-Ama/⁠
+👉 https://melissazarate.github.io/Pagina_Adopta-y-Ama/
 📚 Notas
 Este proyecto no incluye JavaScript ni funcionalidades dinámicas, ya que su propósito es reforzar conceptos básicos de maquetación web.
 ✍️ Autor
