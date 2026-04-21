@@ -1,0 +1,569 @@
+html {
+    scroll-behavior: smooth;
+}
+/* PALETA DE COLORES */
+:root {
+    --m2-claro: #F5EFFF;       /* Fondos de secciones */
+    --m1-soft-fondo:#E5D9F2 ;  /* El fondo general de la página */
+    --morado-oscuro: #231942;  /* Letras, títulos */
+    --morado-brillante: #8C7BE3;
+    --blanco: #ffffff;          
+    --m3:#CDC1FF ;
+    --m4:#3A2870   /*Header y pie de pagina*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--m1-soft-fondo); 
+    color: var(--morado-oscuro);            
+    line-height: 1.5;
+}
+
+
+/*CLASES DEL HEADER */
+.header-inicio {
+    background-color: var(--m4);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px; /* Sombra */
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-inverso {
+    width: 160px; /* Tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.lista-navegacion {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;  
+}
+
+
+/*  CLASES DE BOTONES Y ENLACES */
+.lista-navegacion a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 600;
+    font-family: Trebuchet MS , sans-serif;
+    font-size: 17px;
+}
+
+.btn-adoptar, .btn-info {
+    padding: 8px 15px;
+}
+
+.btn-adoptar:hover, .btn-info:hover {
+    color: var(--morado-brillante); 
+}
+
+.btn-ayudar {
+    background-color: var(--morado-brillante);
+    color: var(--blanco) !important; 
+    padding: 10px 25px;
+    border-radius: 50px;   
+}
+
+
+/* SECCIÓN BIENVENIDA */
+.seccion-bienvenida {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/067/242/320/small/a-group-of-dogs-and-cats-sitting-together-photo.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--m2-claro); 
+    padding-top: 10px;      
+    padding-bottom: 250px;
+    text-align: center;
+}
+
+.titulo-home {
+    font-size: 3rem;
+    color: var(--morado-oscuro);
+    margin-bottom: 0;
+    margin-top: 0 ;
+}
+
+.subtitulo-home {
+    font-size: 1.2rem;
+    color: var(--morado-oscuro);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+
+/* ESTILOS PARA QUIÉNES SOMOS */
+.seccion-info {
+    padding: 60px 20px;
+    background-color: var(--blanco); 
+    text-align: center;
+}
+
+.contenedor-texto {
+    max-width: 600px;
+    margin: 0 auto; /* Centra el bloque de texto */
+}
+ 
+.gatitos {
+    max-width: 100%;
+    height: auto;
+    width: 210px;    
+    border-radius: 50px;
+    display: block;
+    margin: 40px auto;
+} 
+
+
+/* ESTILOS PARA HISTORIAS (GRID) */
+.seccion-historias {
+    padding: 60px 20px;
+}
+
+.grupo-historias {
+    display: grid;
+    /* Esto crea 2 columnas iguales. En celular se verá una sola automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.tarjeta-historia {
+    background-color: var(--m2-claro);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.max_perro {
+
+    max-width: 100%; /* La imagen se encoge si el espacio es pequeño */
+    height: auto;    /* Mantiene la forma original */
+    width: 350px;    
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+}
+.luna_gata{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 34px;
+    /* Centrado automatico */
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/*  ESTILOS PARA VOLUNTARIOS */
+.seccion-voluntarios {
+    padding: 60px 20px;
+    background-color: var(--m2-claro);
+    text-align: left;
+}
+
+
+/* para que el título de voluntarios respete la izquierda */
+.seccion-voluntarios .titulo-home {
+    text-align: left;
+    margin-left: 0;
+}
+
+
+/*ESTILO DEL CORREO*/
+.enlace-correo {
+    color: var(--morado-brillante); 
+    text-decoration: none;         /* Le quita el subrayado feo */
+    font-weight: bold;             
+}
+
+.enlace-correo:hover {
+    text-decoration: underline;    /* Solo se subraya cuando pasas el mouse */
+    color: var(--m4);              /* Cambia a un morado más oscuro al tocarlo */
+}
+
+/* FOOTER (Pie de página) */
+.footer-final {
+    background-color: var(--m4);
+    color: var(--blanco);
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/*NUESTROS ANGELITOS*/
+
+/*Intro*/
+.intro-nuestros-angelitos {
+    background-color: var(--m2-claro);
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.intro-nuestros-angelitos h2 {
+    font-size: 3rem;
+    color: var(--morado-oscuro);
+    margin-bottom: 20px;
+}
+
+.intro-nuestros-angelitos p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/*Boton*/
+.boton-nuestros-angelitos {
+    background-color: var(--m2-claro);
+    padding: 30px 10px;
+    text-align: center;
+}
+
+/*Seccion Gatos y Perros*/
+.seccion-mascotas {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.seccion-mascotas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--morado-oscuro);
+}
+
+/* GRID */
+.grid-mascotas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Polaroids*/
+.polaroid {
+    background-color: var(--blanco);
+    padding: 20px 20px 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(35, 25, 66, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.polaroid h3 {
+    color: var(--morado-brillante);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.polaroid p {
+    font-size: 0.95rem;
+}
+
+/* Hover */
+.polaroid:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(35, 25, 66, 0.3);
+}
+/*diseño para la adopcion*/
+
+
+.contenidoSec main {
+  text-align: justify;
+  padding-bottom: 50px;
+  background-color: #e5d9f2;
+}
+
+.information {
+  /*  padding:50px 150px 20px 150px;*/
+  padding: clamp(25px, 5vw, 100px);
+}
+.content {
+  padding: 20px;
+
+  font-size: 11px;
+  color: #231942;
+
+  font-family: "Trebuchet MS", sans-serif;
+
+  /* max-width: 600px;
+    justify-content: center;
+    width: 100%;*/
+}
+#mainTitle {
+  margin-bottom: 15px;
+
+  text-align: left;
+  font-family: "Trebuchet MS", sans-serif;
+}
+h1 {
+  color: #231942;
+  font-weight: 800px;
+  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+.how_to_adopt_itemt {
+  letter-spacing: 0;
+  font-size: clamp(1rem, 1vw, 3rem);
+  background-color: #F5EFFF;
+  padding: 15px;
+  border-radius: 15px ;
+  margin-bottom: 20px;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.step_number {
+  width: 50px;
+  height: 50px;
+  background-color:#3A2870;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+#subtitle {
+  padding: 15px;
+  font-size: 20px;
+  color: #5e548e;
+}
+h3 {
+  font-size: 20px;
+  color:#3A2870 ;
+}
+.paragraph {
+  padding: 15px;
+  line-height: 1.5;
+  
+}
+.divBoton{
+    margin-top: 30px;
+    text-align: center;
+}
+.boton {
+
+  background-color: #9F86C0;
+  color: #231942;
+  padding: 20px 45px; /*Espacio interno del boton*/
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+
+}
+.content_img{
+    padding: 15px;
+   
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+.title_adopt h3{
+    padding: 20px;
+    color: #3A2870;
+    text-align: center;
+     letter-spacing: -0.04em;
+     font-size: clamp(2rem, 2vw, 5rem);
+
+}
+.paragraph_adopt{
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#form_title h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #3A2870;
+    font-size: 26px;
+}
+#content_form{
+   
+    text-align: left;
+    font-size: 15px;
+    padding: 15px;
+   
+
+
+}
+.forms{
+    
+    width: 90%;
+    max-width:500px ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white; /* Para que la lista no se vea gris */
+    color: #231942; /* Para que el texto sea del morado oscuro */
+    font-family: "Trebuchet MS", sans-serif;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.how_to_adopt_itemt2 {
+  letter-spacing: 0;
+  font-size: 1rem; 
+  background-color: #3A2870;
+  padding: 30px 20px; 
+  border-radius: 15px;
+
+  height: auto;      
+  min-height: min-content; 
+  display: block;     
+  overflow: hidden; 
+  margin-bottom: 30px;  
+}
+.title_adopt2 h3{
+    padding: 20px;
+    color: white;
+    text-align: center;
+     letter-spacing: -0.04em;
+     font-size: clamp(2rem, 2vw, 5rem);
+
+}
+.paragraph_adopt2 {
+  padding: 10px;      
+  text-align: left;   
+  line-height: 1.6;   
+  color: white;
+}
+
+
+/*  DISEÑO RESPONSIVO *//* --- MEDIA QUERIES --- */
+
+/* Ajustes para Tablets y Celulares grandes (1024px o menos/ antes 768px) */
+@media (max-width: 1024px) {
+    
+    /* El menú pasa de estar de lado a estar uno debajo del otro */
+    .contenedor-nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .lista-navegacion {
+        flex-direction: column; /* Enlaces en vertical */
+        gap: 10px;
+    }
+
+    .titulo-home {
+        font-size: 2.2rem;
+    }
+
+    /* El footer mejor en vertical */
+    .footer-final {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* Ajustes para Celulares pequeños (480px o menos) */
+@media (max-width: 480px) {
+    
+    .titulo-home {
+        font-size: 1.8rem;
+    }
+
+    .subtitulo-home {
+        font-size: 1rem;
+    }
+
+    /* Reducimos el espacio de la bienvenida*/
+    .seccion-bienvenida {
+        padding-bottom: 150px; 
+    }
+
+    /* Ajustamos las secciones */
+    .seccion-info, .seccion-historias, .seccion-voluntarios {
+        padding: 40px 15px;
+    }
+
+    .max_perro, .luna_gata {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .intro-nuestros-angelitos h2 {
+        font-size: 2.2rem;
+    }
+
+    .seccion-mascotas h2 {
+        font-size: 2rem;
+    }
+
+    .polaroid img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .intro-nuestros-angelitos {
+        padding: 50px 15px;
+    }
+
+    .boton-nuestros-angelitos {
+        padding: 50px 15px;
+    }
+}
